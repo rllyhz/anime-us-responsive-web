@@ -1,0 +1,150 @@
+<%- include("includes/header.ejs") %>
+
+  <h2 class="heading mt-3">Top Rank #1 Anime</h2>
+  <div class="row mb-2">
+    <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1">
+      <div class="top-anime-wrapper">
+        <div class="top-anime-cover">
+          <a href="/anime/show/<%= topFirstAnime.mal_id %>">
+            <img src="<%= topFirstAnime.image_url %>" alt="Image">
+          </a>
+        </div>
+        <div class="top-anime-detail">
+          <h3>
+            <a href="/anime/show/<%= topFirstAnime.mal_id %>">
+              <%= topFirstAnime.title %> ( <%= topFirstAnime.title_japanese %> )
+            </a>
+          </h3>
+          <div class="description">
+            <div class="detail">
+              <span class="rated">
+                <%= topFirstAnime.rating %>
+              </span> | <span class="type">
+                <%= topFirstAnime.type %>
+              </span>
+            </div>
+            <div class="detail">
+              Total Episodes: <span>
+                <%= topFirstAnime.episodes %>
+              </span>
+            </div>
+            <div class="detail">
+              Genre: <span>
+                <%= topFirstAnimeGenres %>
+              </span>
+            </div>
+            <div class="detail">
+              Status: <span>
+                <%= topFirstAnime.status %>
+              </span>
+            </div>
+            <div class="detail">
+              Score: <span>
+                <%= topFirstAnime.score %>
+              </span>
+            </div>
+            <p class="detail synopsis">
+            <p class="synopsis-title">Synopsis:</p>
+            <p class="synopsis-content">
+              <%= topFirstAnime.synopsis %>
+            </p>
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-sm-1 col-md-1 col-lg-3 col-xl-3">
+              <a class="link" href="/anime/show/<%= topFirstAnime.mal_id %>">
+                Read more
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- TOP ANIME -->
+  <div class="row mt-6 latest-anime">
+    <h2 class="heading">Top Anime List</h2>
+
+    <div class="latest-anime-wrapper">
+      <div class="scrollable-parent">
+
+        <% topAnime.forEach(anime=> { %>
+          <a href="/anime/show/<%= anime.mal_id %>" class="scrollable-item">
+            <div class="card">
+              <div class="card-image">
+                <img src="<%= anime.image_url %>" alt="<%= anime.title %>">
+              </div>
+              <div class="card-title">
+                <%= anime.title %>
+              </div>
+            </div>
+          </a>
+          <% }) %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-2 col-md-5 col-lg-6">
+        <div class=""></div>
+        <div class=""></div>
+        <div class=""></div>
+        <div class=""></div>
+        <div class=""></div>
+        <a href="/anime" class="link see-more mt-2">See more</a>
+      </div>
+    </div>
+  </div>
+  <!-- END TOP ANIME -->
+
+
+  <!-- TOP anime -->
+  <div class="row mt-6 latest-manga">
+    <h2 class="heading">Top Manga List</h2>
+
+    <div class="latest-manga-wrapper">
+      <div class="scrollable-parent">
+        <% topManga.forEach(manga=> { %>
+          <a href="/manga/show/<%= manga.mal_id %>" class="scrollable-item">
+            <div class="card">
+              <div class="card-image">
+                <img src="<%= manga.image_url %>" alt="<%= manga.title %>">
+              </div>
+              <div class="card-title">
+                <%= manga.title %>
+              </div>
+            </div>
+          </a>
+          <% }) %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-2 col-md-5 col-lg-6">
+        <div class=""></div>
+        <div class=""></div>
+        <div class=""></div>
+        <div class=""></div>
+        <div class=""></div>
+        <a href="/manga" class="link see-more mt-2">See more</a>
+      </div>
+    </div>
+  </div>
+  <!-- END TOP MANGA -->
+
+  <div class="row mt-6 search">
+    <div class="card">
+      <h2>What's your favorite Anime, Manga, Character?</h2>
+      <form action="" id="search-here">
+        <div class="form-group">
+          <input id="search" name="keyword" type="text" placeholder="Search here ..." class="form-control" />
+          <label for="search" hidden>Search</label>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
+  <%- include("includes/footer.ejs") %>
