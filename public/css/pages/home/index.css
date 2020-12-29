@@ -5,7 +5,15 @@
 }
 
 .top-anime-wrapper .top-anime-cover {
+  flex: 1 0 36%;
   margin-right: 2rem;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.top-anime-wrapper .top-anime-cover img {
+  width: 100%;
+  border-radius: 12px;
 }
 
 .top-anime-wrapper .top-anime-detail {
