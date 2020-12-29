@@ -1518,4 +1518,22 @@ a {
   width: 85%;
 }
 
+.scrollable-wrapper {
+  width: 100%;
+  height: max-content;
+  overflow: auto;
+}
+.scrollable-wrapper .scrollable-parent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.scrollable-wrapper .scrollable-parent .scrollable-item {
+  flex: 1 0 260px;
+  margin: 0.34rem;
+}
+.scrollable-wrapper .scrollable-parent .scrollable-item .card {
+  padding-top: 2%;
+}
+
 /*# sourceMappingURL=style.css.map */

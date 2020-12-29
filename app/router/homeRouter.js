@@ -59,9 +59,6 @@ router.get("/search", async (req, res) => {
     mangaList,
     characterList,
     keyword,
-    styles: [
-      'home/search'
-    ],
     nav
   })
 })

@@ -52,3 +52,28 @@ a {
     }
   }
 }
+
+
+
+// SCROLLABLE
+
+.scrollable-wrapper {
+  width: 100%;
+  height: max-content;
+  overflow: auto;
+
+  .scrollable-parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .scrollable-item {
+      flex: 1 0 260px;
+      margin: .34rem;
+
+      .card {
+        padding-top: 2%;
+      }
+    }
+  }
+}

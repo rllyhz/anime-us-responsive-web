@@ -1,5 +1,28 @@
 <%- include("../includes/header.ejs") %>
 
+  <style>
+    .load-more {
+      display: grid;
+      place-content: center;
+      margin: 3rem 0;
+    }
+
+    .load-more-btn {
+      border: none;
+      outline: none;
+      background: pink;
+      padding: .65rem 1rem;
+      border-radius: 6px;
+      color: white;
+      cursor: pointer;
+      transition: filter 200ms ease-in-out;
+    }
+
+    .load-more-btn:hover {
+      filter: opacity(.8);
+    }
+  </style>
+
   <div class="row">
     <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
       <form action="" id="search-manga">
@@ -31,5 +54,10 @@
         <% }) %>
     </div>
   </div>
+
+  <div class="load-more">
+    <button class="load-more-btn">Load more</button>
+  </div>
+
 
   <%- include("../includes/footer.ejs") %>

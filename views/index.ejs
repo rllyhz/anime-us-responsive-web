@@ -65,23 +65,24 @@
 
   <!-- TOP ANIME -->
   <div class="row mt-6 latest-anime">
-    <h2 class="heading">Top Anime List</h2>
+    <h2 class="heading">Top 10 Anime List</h2>
 
     <div class="scrollable-wrapper">
       <div class="scrollable-parent">
 
-        <% topAnime.forEach(anime=> { %>
-          <a href="/anime/show/<%= anime.mal_id %>" class="scrollable-item">
-            <div class="card">
-              <div class="card-image">
-                <img src="<%= anime.image_url %>" alt="<%= anime.title %>">
+        <% topAnime.forEach((anime, index)=> { %>
+          <% if (index>= 10) return; %>
+            <a href="/anime/show/<%= anime.mal_id %>" class="scrollable-item">
+              <div class="card">
+                <div class="card-image">
+                  <img src="<%= anime.image_url %>" alt="<%= anime.title %>">
+                </div>
+                <div class="card-title">
+                  <%= anime.title %>
+                </div>
               </div>
-              <div class="card-title">
-                <%= anime.title %>
-              </div>
-            </div>
-          </a>
-          <% }) %>
+            </a>
+            <% }) %>
       </div>
     </div>
 
@@ -101,22 +102,23 @@
 
   <!-- TOP anime -->
   <div class="row mt-6 latest-manga">
-    <h2 class="heading">Top Manga List</h2>
+    <h2 class="heading">Top 10 Manga List</h2>
 
     <div class="scrollable-wrapper">
       <div class="scrollable-parent">
-        <% topManga.forEach(manga=> { %>
-          <a href="/manga/show/<%= manga.mal_id %>" class="scrollable-item">
-            <div class="card">
-              <div class="card-image">
-                <img src="<%= manga.image_url %>" alt="<%= manga.title %>">
+        <% topManga.forEach((manga, index)=> { %>
+          <% if (index>= 10) return; %>
+            <a href="/manga/show/<%= manga.mal_id %>" class="scrollable-item">
+              <div class="card">
+                <div class="card-image">
+                  <img src="<%= manga.image_url %>" alt="<%= manga.title %>">
+                </div>
+                <div class="card-title">
+                  <%= manga.title %>
+                </div>
               </div>
-              <div class="card-title">
-                <%= manga.title %>
-              </div>
-            </div>
-          </a>
-          <% }) %>
+            </a>
+            <% }) %>
       </div>
     </div>
 

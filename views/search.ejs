@@ -14,10 +14,10 @@
 
   <!-- ANIME -->
   <div class="result-anime mt-6">
-    <h3 class="heading">Result Anime for '<%= keyword %>'</h3>
+    <h3 class="heading" style="margin-bottom: 0;">Result Anime for '<%= keyword %>'</h3>
 
-    <div class="scrollable-wrapper">
-      <div class="scrollable-parent">
+    <div class="scrollable-wrapper" style="padding-top: 0;">
+      <div class="scrollable-parent" style="padding-top: 0;">
         <% animeList.forEach(anime=> { %>
           <a href="/anime/show/<%= anime.mal_id %>" class="scrollable-item">
             <div class="card">
