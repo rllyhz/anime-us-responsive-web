@@ -67,7 +67,7 @@
   <div class="row mt-6 latest-anime">
     <h2 class="heading">Top Anime List</h2>
 
-    <div class="latest-anime-wrapper">
+    <div class="scrollable-wrapper">
       <div class="scrollable-parent">
 
         <% topAnime.forEach(anime=> { %>
@@ -103,7 +103,7 @@
   <div class="row mt-6 latest-manga">
     <h2 class="heading">Top Manga List</h2>
 
-    <div class="latest-manga-wrapper">
+    <div class="scrollable-wrapper">
       <div class="scrollable-parent">
         <% topManga.forEach(manga=> { %>
           <a href="/manga/show/<%= manga.mal_id %>" class="scrollable-item">
