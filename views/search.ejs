@@ -1,0 +1,87 @@
+<%- include("includes/header.ejs") %>
+
+  <div class="row">
+    <div class="col-sm-1 col-md-2 col-lg-2 col-xl-2">
+      <form action="" id="search-anime">
+        <div class="form-group">
+          <input id="search" name="search" type="text" placeholder="Search" class="form-control"
+            value="<%= keyword %>" />
+          <label for="search" hidden>Search</label>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ANIME -->
+  <div class="result-anime mt-6">
+    <h3 class="heading">Result Anime for '<%= keyword %>'</h3>
+
+    <div class="scrollable-wrapper">
+      <div class="scrollable-parent">
+        <% animeList.forEach(anime=> { %>
+          <a href="/anime/show/<%= anime.mal_id %>" class="scrollable-item">
+            <div class="card">
+              <div class="card-image">
+                <img src="<%= anime.image_url %>" alt="<%= anime.title %>">
+              </div>
+              <div class="card-title">
+                <%= anime.title %>
+              </div>
+            </div>
+          </a>
+          <% }) %>
+      </div>
+    </div>
+  </div>
+  <!-- END ANIME -->
+
+
+  <!-- MANGA -->
+  <div class="result-anime mt-6">
+    <h3 class="heading">Result Manga for '<%= keyword %>'</h3>
+
+    <div class="scrollable-wrapper">
+      <div class="scrollable-parent">
+        <% mangaList.forEach(manga=> { %>
+          <a href="/manga/show/<%= manga.mal_id %>" class="scrollable-item">
+            <div class="card">
+              <div class="card-image">
+                <img src="<%= manga.image_url %>" alt="<%= manga.title %>">
+              </div>
+              <div class="card-title">
+                <%= manga.title %>
+              </div>
+            </div>
+          </a>
+          <% }) %>
+      </div>
+    </div>
+  </div>
+  <!-- END MANGA -->
+
+
+
+  <!-- CHARACTERS -->
+  <div class="result-anime mt-6">
+    <h3 class="heading">Result Character for '<%= keyword %>'</h3>
+
+    <div class="scrollable-wrapper">
+      <div class="scrollable-parent">
+        <% characterList.forEach(character=> { %>
+          <a href="/characters/show/<%= character.mal_id %>" class="scrollable-item">
+            <div class="card">
+              <div class="card-image">
+                <img src="<%= character.image_url %>" alt="<%= character.name %>">
+              </div>
+              <div class="card-title">
+                <%= character.name %>
+              </div>
+            </div>
+          </a>
+          <% }) %>
+      </div>
+    </div>
+  </div>
+  <!-- END CHARACTERS -->
+
+  <%- include("includes/footer.ejs") %>

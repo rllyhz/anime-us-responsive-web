@@ -1,0 +1,66 @@
+<%- include("../includes/header.ejs") %>
+
+  <div class="card character-show">
+    <div class="character-show-wrapper">
+      <div class="character-cover">
+        <a href="">
+          <img src="<%= character.image_url %>" alt="<%= character.title %>">
+        </a>
+      </div>
+      <div class="character-detail">
+        <h3 class="character-title">
+          <a href="/character/show/<%= character.id %>">
+            <%= character.name %>
+          </a>
+        </h3>
+        <div class="character-description" style="padding-top: 1.2rem;">
+          <div class="detail">
+            <strong>About: </strong>
+            <p>
+              <%= character.about %>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="" style="margin: 3rem 0;"></div>
+
+  <div class="row">
+    <div class="col-sm-1 col-md-1 col-lg-2 col-xl-2">
+      <% if (character.animeography && character.animeography.length> 0) { %>
+        <div class="detail">
+          <strong class="heading">Character of Anime</strong>
+          <ul>
+            <% character.animeography.forEach(anime=> { %>
+              <li>
+                <a href="/anime/show/<%= anime.mal_id %>">
+                  <%= anime.name %>
+                </a>
+              </li>
+              <% }) %>
+          </ul>
+
+        </div>
+        <% } %>
+
+
+          <% if (character.mangaography && character.mangaography.length> 0) { %>
+            <div class="detail">
+              <strong class="heading">Character of Manga</strong>
+              <ul>
+                <% character.mangaography.forEach(manga=> { %>
+                  <li>
+                    <a href="/manga/show/<%= manga.mal_id %>">
+                      <%= manga.name %>
+                    </a>
+                  </li>
+                  <% }) %>
+              </ul>
+            </div>
+            <% } %>
+    </div>
+  </div>
+
+  <%- include("../includes/footer.ejs") %>

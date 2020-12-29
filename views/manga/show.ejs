@@ -1,0 +1,131 @@
+<%- include("../includes/header.ejs") %>
+
+  <div class="card manga-show">
+    <div class="manga-show-wrapper">
+      <div class="manga-cover">
+        <a href="">
+          <img src="<%= manga.image_url %>" alt="<%= manga.title %>">
+        </a>
+      </div>
+      <div class="manga-detail">
+        <h3 class="manga-title">
+          <a href="/manga/show/<%= manga.id %>">
+            <%= manga.title %> ( <%= manga.title_japanese %> )
+          </a>
+        </h3>
+        <div class="manga-description" style="padding-top: 1.2rem;">
+          <div class="detail">
+            Type : <span>
+              <%= manga.type %>
+            </span>
+          </div>
+          <div class="detail">
+            Volumes : <span>
+              <%= manga.volumes %>
+            </span>
+          </div>
+          <div class="detail">
+            Chapters : <span>
+              <%= manga.chapters %>
+            </span>
+          </div>
+          <div class="detail">
+            Publishing : <span>
+              <%= manga.publishing ? "Yes" : "No" %>
+            </span>
+          </div>
+          <div class="detail">
+            Genre : <span>
+              <%= manga.genre %>
+            </span>
+          </div>
+          <div class="detail">
+            Status : <span>
+              <%= manga.status %>
+            </span>
+          </div>
+          <div class="detail">
+            Rank : <span>
+              #<%= manga.rank %>
+            </span>
+          </div>
+          <div class="detail">
+            Score : <span>
+              <%= manga.score %>
+            </span>
+          </div>
+          <div class="detail">
+            Authors : <span>
+              <%= manga.authors %>
+            </span>
+          </div>
+          <div class="detail" style="margin-top: 2rem;">
+            <strong>Synopsis: </strong>
+            <p>
+              <%= manga.synopsis %>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--  -->
+  <% if (relatedOtherManga && relatedOtherManga.length> 0) { %>
+    <div class="anime-adaptation">
+      <h3 class="heading">Related Manga</h3>
+
+      <div class="adaptions">
+        <ul>
+          <% relatedOtherManga.forEach(manga=> { %>
+            <li>
+              <a href="/manga/show/<%= manga.mal_id %>">
+                <%= manga.name %>
+              </a>
+            </li>
+            <% }) %>
+        </ul>
+      </div>
+    </div>
+    <% } %>
+
+      <!--  -->
+      <% if (adaptations && adaptations.length> 0) { %>
+        <div class="anime-adaptation">
+          <h3 class="heading">Anime Adaptations</h3>
+
+          <div class="adaptions">
+            <ul>
+              <% adaptations.forEach(manga=> { %>
+                <li>
+                  <a href="/anime/show/<%= manga.mal_id %>">
+                    <%= manga.name %>
+                  </a>
+                </li>
+                <% }) %>
+            </ul>
+          </div>
+        </div>
+        <% } %>
+
+          <% if (sequel && sequel.length> 0) { %>
+            <div class="anime-adaptation">
+              <h3 class="heading">Manga Adaptations</h3>
+
+              <div class="adaptions">
+                <ul>
+                  <% sequel.forEach(manga=> { %>
+                    <li>
+                      <a href="/manga/show/<%= manga.mal_id %>">
+                        <%= manga.name %>
+                      </a>
+                    </li>
+                    <% }) %>
+                </ul>
+              </div>
+            </div>
+            <% } %>
+
+
+              <%- include("../includes/footer.ejs") %>

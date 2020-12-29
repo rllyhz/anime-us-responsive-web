@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    <%= title %> | AnimeUs
+  </title>
+  <!-- Compiled and minified CSS -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Page specific scripts -->
+  <% if (typeof styles !=='undefined' ) { %>
+    <% styles.forEach(cssFile=> { %>
+      <% if (typeof styles !=='undefined' ) { %>
+        <link rel="stylesheet" href="/css/pages/<%= cssFile %>.css">
+        <% } %>
+          <% }) %>
+            <% } %>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="/" class="nav-brand">AnimeUs</a>
+
+          <div class="nav-links">
+            <a href="/" class="nav-links--item <%= nav.home ? " active" : "" %>">Home</a>
+            <a href="/anime" class="nav-links--item <%= nav.anime ? " active" : "" %>">Anime</a>
+            <a href="/manga" class="nav-links--item <%= nav.manga ? " active" : "" %>">Manga</a>
+            <a href="/characters" class="nav-links--item <%= nav.characters ? " active" : "" %>">Characters</a>
+            <a href="#search-here" class="nav-links--item<%= nav.search ? " active" : "" %>">Search</a>
+          </div>
+
+          <div class="menu-icon">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="progress progress-bar">
+    <div class="indeterminate"></div>
+  </div>
+
+  <main class="main" style="min-height: 60vh;">
+    <div class="container">

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Anime | Anime Kita</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="nav-wrapper">
+        <div class="container">
+          <a href="#" class="brand-logo">AnimeKita</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="">Home</a></li>
+            <li><a href="">Playlist</a></li>
+            <li><a href="">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="progress">
+    <div class="indeterminate"></div>
+  </div>
+
+
+  <main class="main" style="min-height: 60vh;">
+    <div class="container">
+
+      <div class="row">
+        <div class="col s12 m12">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <!-- <span class="card-title">Search</span> -->
+              <div class="card-content">
+                <img src="" alt="Image" class="image">
+                <p>Title : <span class="title">${anime.getTitle}</span></p>
+                <p>Type : <span class="type">${anime.getType}</span></p>
+                <p>Rated : <span class="rated">${anime.getRated}</span></p>
+                <p>Score : <span class="score">${anime.getScore}</span></p>
+                <p>Total Episodes : <span class="total-episode">${anime.getTotalEpisodes}</span></p>
+                <p>Total Episodes : <span class="synopsis">${anime.getSysnopsis}</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </main>
+
+
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Footer Content</h5>
+          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2014 Copyright Text
+        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./js/model/animeModel.js"></script>
+  <script src="./js/domHelpers.js"></script>
+  <script src="./js/pageHelpers.js"></script>
+  <script src="./js/api.js"></script>
+  <script src="./js/pages/detailAnime.js"></script>
+</body>
+
+</html>
