@@ -60,9 +60,11 @@
             </span>
           </div>
           <div class="detail" style="margin-top: 2rem;">
-            <strong>Synopsis: </strong>
+            <strong>About: </strong>
             <p>
-              <%= manga.synopsis %>
+              <span>
+                <%= manga.synopsis %>
+              </span>
             </p>
           </div>
         </div>
@@ -72,60 +74,67 @@
 
 
   <!--  -->
-  <% if (relatedOtherManga && relatedOtherManga.length> 0) { %>
-    <div class="anime-adaptation">
-      <h3 class="heading">Related Manga</h3>
+  <div class="" style="margin: 3rem 0;">
+    <div class="row">
+      <div class="col-sm-1 col-md-1 col-lg-3 col-xl-3">
 
-      <div class="adaptions">
-        <ul>
-          <% relatedOtherManga.forEach(manga=> { %>
-            <li>
-              <a href="/manga/show/<%= manga.mal_id %>">
-                <%= manga.name %>
-              </a>
-            </li>
-            <% }) %>
-        </ul>
+        <% if (relatedOtherManga && relatedOtherManga.length> 0) { %>
+          <div class="anime-adaptation">
+            <h3 class="heading">Related Manga</h3>
+
+            <div class="adaptions">
+              <ul>
+                <% relatedOtherManga.forEach(manga=> { %>
+                  <li>
+                    <a href="/manga/show/<%= manga.mal_id %>">
+                      <%= manga.name %>
+                    </a>
+                  </li>
+                  <% }) %>
+              </ul>
+            </div>
+          </div>
+          <% } %>
+
+            <!--  -->
+            <% if (adaptations && adaptations.length> 0) { %>
+              <div class="anime-adaptation">
+                <h3 class="heading">Anime Adaptations</h3>
+
+                <div class="adaptions">
+                  <ul>
+                    <% adaptations.forEach(manga=> { %>
+                      <li>
+                        <a href="/anime/show/<%= manga.mal_id %>">
+                          <%= manga.name %>
+                        </a>
+                      </li>
+                      <% }) %>
+                  </ul>
+                </div>
+              </div>
+              <% } %>
+
+                <% if (sequel && sequel.length> 0) { %>
+                  <div class="anime-adaptation">
+                    <h3 class="heading">Manga Adaptations</h3>
+
+                    <div class="adaptions">
+                      <ul>
+                        <% sequel.forEach(manga=> { %>
+                          <li>
+                            <a href="/manga/show/<%= manga.mal_id %>">
+                              <%= manga.name %>
+                            </a>
+                          </li>
+                          <% }) %>
+                      </ul>
+                    </div>
+                  </div>
+                  <% } %>
+
       </div>
     </div>
-    <% } %>
+  </div>
 
-      <!--  -->
-      <% if (adaptations && adaptations.length> 0) { %>
-        <div class="anime-adaptation">
-          <h3 class="heading">Anime Adaptations</h3>
-
-          <div class="adaptions">
-            <ul>
-              <% adaptations.forEach(manga=> { %>
-                <li>
-                  <a href="/anime/show/<%= manga.mal_id %>">
-                    <%= manga.name %>
-                  </a>
-                </li>
-                <% }) %>
-            </ul>
-          </div>
-        </div>
-        <% } %>
-
-          <% if (sequel && sequel.length> 0) { %>
-            <div class="anime-adaptation">
-              <h3 class="heading">Manga Adaptations</h3>
-
-              <div class="adaptions">
-                <ul>
-                  <% sequel.forEach(manga=> { %>
-                    <li>
-                      <a href="/manga/show/<%= manga.mal_id %>">
-                        <%= manga.name %>
-                      </a>
-                    </li>
-                    <% }) %>
-                </ul>
-              </div>
-            </div>
-            <% } %>
-
-
-              <%- include("../includes/footer.ejs") %>
+  <%- include("../includes/footer.ejs") %>

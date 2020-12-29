@@ -11,10 +11,13 @@
 .anime-show .anime-show-wrapper .anime-cover {
   flex: 1 0 36%;
   margin-right: 2rem;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .anime-show .anime-show-wrapper .anime-cover img {
   width: 100%;
+  border-radius: 12px;
 }
 
 .anime-show .anime-show-wrapper .anime-detail {
