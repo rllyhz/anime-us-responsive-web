@@ -65,10 +65,12 @@
             </span>
           </div>
 
-          <div class="detail" style="margin-top: 2rem;">
+          <div class="detail synopsis" style="margin-top: 2rem;">
             <strong>Synopsis: </strong>
             <p>
-              <%= anime.synopsis %>
+              <span>
+                <%= anime.synopsis %>
+              </span>
             </p>
           </div>
 
@@ -79,7 +81,9 @@
               <ul>
                 <% anime.opening_themes.forEach(opening=> { %>
                   <li>
-                    <%= opening %>
+                    <span>
+                      <%= opening %>
+                    </span>
                   </li>
                   <% }) %>
               </ul>
@@ -93,7 +97,9 @@
                   <ul>
                     <% anime.ending_themes.forEach(ending=> { %>
                       <li>
-                        <%= ending %>
+                        <span>
+                          <%= ending %>
+                        </span>
                       </li>
                       <% }) %>
                   </ul>
@@ -103,50 +109,57 @@
       </div>
     </div>
 
-    <div class=" anime-links">
+    <div class="anime-links">
       <h3 style="text-align: center;">Video Trailer</h3>
       <div class="video-trailer">
         <iframe width="100%" src="<%= anime.trailer_url %> " frameborder="0"></iframe>
       </div>
     </div>
-
   </div>
 
-  <% if (relatedOtherAnime && relatedOtherAnime.length> 0) { %>
-    <div class="anime-related">
-      <h3 class="heading">Related Anime</h3>
+  <div class="" style="margin: 3rem;">
+    <div class="row">
+      <div class="col-sm-1 col-md-1-col-lg-2 col-xl-2">
 
-      <div class="related">
-        <ul>
-          <% relatedOtherAnime.forEach(anime=> { %>
-            <li>
-              <a href="/anime/show/<%= anime.mal_id %>">
-                <%= anime.name %>
-              </a>
-            </li>
-            <% }) %>
-        </ul>
+        <% if (relatedOtherAnime && relatedOtherAnime.length> 0) { %>
+          <div class="anime-related">
+            <h3 class="heading">Related Anime</h3>
+
+            <div class="related">
+              <ul>
+                <% relatedOtherAnime.forEach(anime=> { %>
+                  <li>
+                    <a href="/anime/show/<%= anime.mal_id %>">
+                      <%= anime.name %>
+                    </a>
+                  </li>
+                  <% }) %>
+              </ul>
+            </div>
+          </div>
+          <% } %>
+
+
+            <% if (adaptations && adaptations.length> 0) { %>
+              <div class="anime-adaptation">
+                <h3 class="heading">Manga Adaptations</h3>
+
+                <div class="adaptions">
+                  <ul>
+                    <% adaptations.forEach(manga=> { %>
+                      <li>
+                        <a href="/manga/show/<%= manga.mal_id %>">
+                          <%= manga.name %>
+                        </a>
+                      </li>
+                      <% }) %>
+                  </ul>
+                </div>
+              </div>
+              <% } %>
+
       </div>
     </div>
-    <% } %>
+  </div>
 
-
-      <% if (adaptations && adaptations.length> 0) { %>
-        <div class="anime-adaptation">
-          <h3 class="heading">Manga Adaptations</h3>
-
-          <div class="adaptions">
-            <ul>
-              <% adaptations.forEach(manga=> { %>
-                <li>
-                  <a href="/manga/show/<%= manga.mal_id %>">
-                    <%= manga.name %>
-                  </a>
-                </li>
-                <% }) %>
-            </ul>
-          </div>
-        </div>
-        <% } %>
-
-          <%- include("../includes/footer.ejs") %>
+  <%- include("../includes/footer.ejs") %>
