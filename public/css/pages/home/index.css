@@ -1,0 +1,73 @@
+.top-anime-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.top-anime-wrapper .top-anime-cover {
+  margin-right: 2rem;
+}
+
+.top-anime-wrapper .top-anime-detail {
+  color: rgb(129, 129, 129);
+}
+
+.top-anime-wrapper .top-anime-detail h3 {
+  color: rebeccapurple;
+  text-decoration: underline;
+}
+
+.top-anime-wrapper .top-anime-detail .description {
+  margin-top: 1.4rem;
+}
+
+.link {
+  display: inline-block;
+  padding: .65rem .45rem;
+  margin-top: 2rem !important;
+  background-color: pink;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  transition: filter 200ms ease-in-out;
+}
+
+.link:hover {
+  filter: opacity(.8);
+}
+
+
+@media (max-width: 689px) {
+  .top-anime-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .link {
+    width: 40%;
+    margin: 0 auto;
+  }
+}
+
+.scrollable-wrapper {
+  width: 100%;
+  height: max-content;
+  overflow: auto;
+}
+
+.scrollable-wrapper .scrollable-parent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.scrollable-wrapper .scrollable-parent .scrollable-item {
+  flex: 1 0 260px;
+  margin: .34rem;
+}
+
+
+
+/* TOP ANIME */

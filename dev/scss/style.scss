@@ -29,3 +29,26 @@ body {
 a {
   color: rgb(118, 65, 170);
 }
+
+.wrapper-search {
+  color: white;
+  padding: 3rem 0;
+
+  h2 {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  form {
+    width: 100%;
+
+    .form-group {
+      width: 60%;
+      margin: 0 auto;
+
+      input {
+        width: 85%;
+      }
+    }
+  }
+}
