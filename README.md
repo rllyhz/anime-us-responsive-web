@@ -6,9 +6,11 @@ This web uses an unofficial MyAnimeList API in order to provide some information
 
 > [`https://api.jikan.moe/v3`](https://api.jikan.moe/v3)
 
+<br>
+
 ## Preview Video
 
-[<img src="https://img.youtube.com/vi/<VIDEO ID>/maxresdefault.jpg" width="100%">](previews/preview.mkv)
+![Preview Video](previews/home.png)
 
 <br>
 
