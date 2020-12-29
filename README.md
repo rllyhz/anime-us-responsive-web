@@ -1,6 +1,6 @@
 # **AnimeUs Responsive Web**
 
-WebApp that provides some information of Anime, Manga, Characters. Front-end side of the app was built using only pure [`HTML`](https://www.w3.org/), [`SCSS (Css Preprocessor)`](https://sass-lang.com/documentation/syntax), and [`Javascript`](https://developer.mozilla.org/en-US/docs/Web/javascript) language. Besides, The back-end side was built in using [`nodejs`](https://nodejs.org/en/) and [`express`](http://expressjs.com/) library to serve the web server.
+WebApp that provides some information of Anime, Manga, Characters. Front-end side of the app was built using only pure [`HTML`](https://www.w3.org/), [`SCSS (Css Preprocessor)`](https://sass-lang.com/documentation/syntax), and [`Javascript`](https://developer.mozilla.org/en-US/docs/Web/javascript) language. Besides, The back-end side was built using [`nodejs`](https://nodejs.org/en/) and [`express`](http://expressjs.com/) library to serve the web server.
 
 ### Features
 
