@@ -2,6 +2,14 @@
 
 WebApp that provides some information of Anime, Manga, Characters.
 
+### Features
+
+- Show Anime list
+- Show Manga list
+- Show Characters list
+- Show Top Anime and Manga list
+- Detail description of each Anime and Manga
+
 This web uses an unofficial MyAnimeList API in order to provide some information. [This api](https://api.jikan.moe/v3) was created by [`Jikan`](https://github.com/jikan-me/jikan). Here's the link if you want to use it as well :
 
 > [`https://api.jikan.moe/v3`](https://api.jikan.moe/v3)
@@ -10,7 +18,7 @@ This web uses an unofficial MyAnimeList API in order to provide some information
 
 ## Preview Video
 
-![Preview Video](previews/home.png)
+[![Preview Video](previews/home.png)](previews/preview.mkv)
 
 <br>
 
