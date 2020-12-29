@@ -12,7 +12,9 @@ WebApp that provides some information of Anime, Manga, Characters. Front-end sid
 
 This web uses an unofficial MyAnimeList API in order to provide some information. [This api](https://api.jikan.moe/v3) was created by [`Jikan`](https://github.com/jikan-me/jikan). Here's the link if you want to use it as well :
 
-> [`https://api.jikan.moe/v3`](https://api.jikan.moe/v3)
+> Official Doc :  [`https://jikan.moe/`](https://jikan.moe/)
+
+> Base url of API :  [`https://api.jikan.moe/v3`](https://api.jikan.moe/v3)
 
 <br>
 
