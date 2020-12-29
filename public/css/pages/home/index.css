@@ -15,6 +15,7 @@
 .top-anime-wrapper .top-anime-detail h3 {
   color: rebeccapurple;
   text-decoration: underline;
+  font-size: 1.4rem;
 }
 
 .top-anime-wrapper .top-anime-detail .description {
@@ -43,6 +44,10 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+
+  .top-anime-wrapper .top-anime-detail h3 {
+    font-size: 1.2rem;
   }
 
   .link {
