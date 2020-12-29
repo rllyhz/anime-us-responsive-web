@@ -1,0 +1,41 @@
+.character-show {
+  padding: 1rem;
+}
+
+.character-show .character-show-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.character-show .character-show-wrapper .character-cover {
+  flex: 1 0 36%;
+  margin-right: 2rem;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.character-show .character-show-wrapper .character-cover img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.character-show .character-show-wrapper .character-detail {
+  color: rgb(212, 212, 212);
+}
+
+.character-show .character-show-wrapper .character-detail h3.character-title,
+.character-show .character-show-wrapper .character-detail a {
+  color: white;
+  text-decoration: underline;
+}
+
+.character-show .character-show-wrapper .character-detail .character-description .detail {
+  color: white;
+  margin: .65rem 0;
+}
+
+.character-show .character-show-wrapper .character-detail .character-description .detail span {
+  color: rgb(212, 212, 212);
+}
+

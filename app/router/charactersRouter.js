@@ -38,7 +38,7 @@ router.get("/show/:id", async (req, res) => {
     title: "Character Detail",
     character,
     styles: [
-      "character/show"
+      "characters/show"
     ]
   }
 
