@@ -1,0 +1,35 @@
+$cardBackgroundcolor: rgb(118, 65, 170);
+
+.card, div.card, span.card {
+  width: 100%;
+  display: block;
+  background-color: $cardBackgroundcolor;
+  border-radius: 8px;
+  box-shadow: 1px 1px 3px rgba($cardBackgroundcolor, .8);
+  padding-bottom: 1rem;
+
+  > div:not(:first-child) {
+    margin-top: 1rem;
+    padding: 0 1rem;
+  }
+
+  & .card-image {
+    width: 90%;
+    border-radius: 8px;
+    border-radius: 8px;
+    margin: .75rem auto;
+    overflow: hidden;
+
+    & img {
+      width: 100%;
+    }
+  }
+
+  & .card-title {
+    color: white;
+  }
+
+  & .card-content {
+    color: rgb(227, 198, 255);
+  }
+}
