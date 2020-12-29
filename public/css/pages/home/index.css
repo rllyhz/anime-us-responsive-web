@@ -9,7 +9,15 @@
 }
 
 .top-anime-wrapper .top-anime-detail {
-  color: rgb(129, 129, 129);
+  color: rgb(95, 95, 95);
+}
+
+.top-anime-wrapper .top-anime-detail .description {
+  margin-top: 1.4rem;
+}
+
+.top-anime-wrapper .top-anime-detail .description .detail span {
+  color: rgb(143, 143, 143);
 }
 
 .top-anime-wrapper .top-anime-detail h3 {
@@ -18,9 +26,6 @@
   font-size: 1.4rem;
 }
 
-.top-anime-wrapper .top-anime-detail .description {
-  margin-top: 1.4rem;
-}
 
 .link {
   display: inline-block;

@@ -1,9 +1,12 @@
 {
   "compilerOptions": {
     "target": "ES6",
-    "outDir": "./dist/js",
+    "outDir": "./public/js/",
   },
   "include": [
-    "dev/ts/*.ts"
+    "./dev/ts/*.ts"
+  ],
+  "exclude": [
+    "./dev/ts/*.js"
   ]
 }
