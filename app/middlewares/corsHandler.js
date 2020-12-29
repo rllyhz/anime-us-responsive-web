@@ -1,3 +1,3 @@
-function (req, res, next) {
+function cors(req, res, next) {
 
 }
