@@ -8,14 +8,16 @@ This web uses an unofficial MyAnimeList API in order to provide some information
 
 ## Preview Video
 
-[![Preview Video](previews/home.png)](previews/preview.mkv)
+![![Preview Video](previews/home.png)](previews/preview.mkv)
 
 <br>
 
 ## Home Page
 
 ![Home](previews/home.png)
+
 ![Home](previews/home_2.png)
+
 ![Home](previews/home_3.png)
 
 <br>
@@ -23,7 +25,9 @@ This web uses an unofficial MyAnimeList API in order to provide some information
 ## Anime Page
 
 ![Anime](previews/anime_show.png)
+
 ![Anime](previews/anime_show_2.png)
+
 ![Anime](previews/anime_show_3.png)
 
 
