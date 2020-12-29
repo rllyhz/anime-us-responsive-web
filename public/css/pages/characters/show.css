@@ -39,3 +39,27 @@
   color: rgb(212, 212, 212);
 }
 
+
+
+
+
+@media (max-width: 820px) {
+  .character-show .character-show-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+  }
+
+  .character-show .character-show-wrapper .character-cover {
+    margin-right: 0;
+  }
+
+  .character-show  .character-links .video-trailer {
+    height: 260px;
+  }
+}

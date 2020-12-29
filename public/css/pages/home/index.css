@@ -59,6 +59,10 @@
     text-align: center;
   }
 
+  .top-anime-wrapper .top-anime-cover {
+    margin-right: 0;
+  }
+
   .top-anime-wrapper .top-anime-detail h3 {
     font-size: 1.2rem;
   }
