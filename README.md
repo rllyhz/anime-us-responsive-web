@@ -8,7 +8,7 @@ This web uses an unofficial MyAnimeList API in order to provide some information
 
 ## Preview Video
 
-![![Preview Video](previews/home.png)](previews/preview.mkv)
+[<img src="https://img.youtube.com/vi/<VIDEO ID>/maxresdefault.jpg" width="100%">](previews/preview.mkv)
 
 <br>
 
