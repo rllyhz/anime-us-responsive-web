@@ -1,0 +1,41 @@
+{
+  "request_hash": "request:anime: 4731f39937552653b94c9f99ded60ecdebc1f7e0",
+  "request_cached": true,
+  "request_cache_expiry": 32885,
+  "episodes_last_page": 3,
+  "episodes": [
+    {
+      "episode_id": 1,
+      "title": "Enter: Naruto Uzumaki!",
+      "title_japanese": "参上! うずまきナルト",
+      "title_romanji": "Sanjou! Uzumaki Naruto ",
+      "aired": "2002-10-03T00:00:00+00:00",
+      "filler": false,
+      "recap": false,
+      "video_url": "https://myanimelist.net/anime/20/Naruto/episode/1",
+      "forum_url": "https://myanimelist.net/forum/?topicid=99623"
+    },
+    {
+      "episode_id": 2,
+      "title": "My Name is Konohamaru!",
+      "title_japanese": "木ノ葉丸だ コレ!",
+      "title_romanji": "Konohamaru da Kore! ",
+      "aired": "2002-10-10T00:00:00+00:00",
+      "filler": false,
+      "recap": false,
+      "video_url": "https://myanimelist.net/anime/20/Naruto/episode/2",
+      "forum_url": "https://myanimelist.net/forum/?topicid=99805"
+    },
+    {
+      "episode_id": 3,
+      "title": "Sasuke and Sakura: Friends or Foes?",
+      "title_japanese": "宿敵!?サスケとサクラ",
+      "title_romanji": "Shukuteki!? Sasuke to Sakura ",
+      "aired": "2002-10-17T00:00:00+00:00",
+      "filler": false,
+      "recap": false,
+      "video_url": "https://myanimelist.net/anime/20/Naruto/episode/3",
+      "forum_url": "https://myanimelist.net/forum/?topicid=99919"
+    }
+  ]
+}
